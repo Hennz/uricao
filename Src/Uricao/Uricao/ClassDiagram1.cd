@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAO" Collapsed="true">
+    <Position X="18.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOAbono" Collapsed="true">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAQAAAIAAACAAAAAAAABAAIBAABAI=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOAbono.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOAgendaCitas" Collapsed="true">
+    <Position X="14.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABAAAAAAAQAAAgAAAAAEAAQAAAAAgAAgAQIAAAAAQ=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOAgendaCitas.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOBanco" Collapsed="true">
+    <Position X="23.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACBAAAAAAAAAAAAAAAQACAAEAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOBanco.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOCuentaBancaria" Collapsed="true">
+    <Position X="32.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAoAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOCuentaBancaria.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOCuentasPorCobrar" Collapsed="true">
+    <Position X="0.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAICiAAEAAIAAAAAAACAAABAAAAAAABA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOCuentasPorCobrar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOCuentasPorPagar" Collapsed="true">
+    <Position X="9.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAAAAAAAEAAIACgAAEAAUAAAEAQAAQAIAAAAIEAgA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOCuentasPorPagar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOEmpleado" Collapsed="true">
+    <Position X="16.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQEAIAAAAAACAAQAAAAAAQAQAAgAAAAAAIQAQE=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOEmpleado.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOHistoriaClinica" Collapsed="true">
+    <Position X="25.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCgAgIAABAAAAAJgCBAJACFAAAAAAQAgAEAIAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOHistoriaClinica.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOImplemento" Collapsed="true">
+    <Position X="34.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAkAAAAAAAAgAAAQAAAAAAQEBAIEAAAA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOImplemento.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOInventario" Collapsed="true">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAEAQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOInventario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOPresupuestoFactura" Collapsed="true">
+    <Position X="12" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIFmQBgAAQkEKgAAQgggACAAAIUEAAgiBQAAAAARmSA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOPresupuestoFactura.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOProducto" Collapsed="true">
+    <Position X="18.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAQAAAgAAAAIAAAAAhAAgAAEAABAJAAAAE=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOProducto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOProveedor" Collapsed="true">
+    <Position X="27.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAQgAAAAAAAAgCABAQAAgCAEAAAAAAAAYA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOProveedor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAORol" Collapsed="true">
+    <Position X="36.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABABABAAgBAAAACAIAARAAIAAAAAAIAQQACA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAORol.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAODireccion" Collapsed="true">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOServerDireccion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOSQLServer" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOSQLServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOTratamiento" Collapsed="true">
+    <Position X="21" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAEIAIQAAhAAAQAAAQAAAAAMAAAIIAAAQA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOTratamiento.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.AccesoDeDatos.DAOS.DAOUsuario" Collapsed="true">
+    <Position X="30" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAACAAAACAAAIAAAAAAgAAQAAAQEAAAEKQAYAAA=</HashCode>
+      <FileName>AccesoDeDatos\DAOS\DAOUsuario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoAgregarTratamiento" Collapsed="true">
+    <Position X="27.5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAABAAAABAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoAgregarTratamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoAgregarTratamientoAsociado" Collapsed="true">
+    <Position X="29.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAABAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoAgregarTratamientoAsociado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoConsultarTratamiento" Collapsed="true">
+    <Position X="32.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarTratamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoConsultarTratamientoAsociado" Collapsed="true">
+    <Position X="27.5" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarTratamientoAsociado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoConsultarTratamientoEspecificoHistoriaClinica" Collapsed="true">
+    <Position X="29.25" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarTratamientoEspecificoHistoriaClinica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoConsultarTratamientoNoAsociado" Collapsed="true">
+    <Position X="31" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarTratamientoNoAsociado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoConsultarXEstatusTratamiento" Collapsed="true">
+    <Position X="32.75" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarXEstatusTratamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoConsultarXIdTratamiento" Collapsed="true">
+    <Position X="27.5" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarXIdTratamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoConsultarXNombreTratamiento" Collapsed="true">
+    <Position X="29.25" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarXNombreTratamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoEliminarTratamiento" Collapsed="true">
+    <Position X="31" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoEliminarTratamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoEliminarTratamientoAsociado" Collapsed="true">
+    <Position X="32.75" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoEliminarTratamientoAsociado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoValidarNumero" Collapsed="true">
+    <Position X="27.5" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoValidarNumero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoValidaString" Collapsed="true">
+    <Position X="29.25" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\CTratamientos\ComandoValidaString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uricao.LogicaDeNegocios.Comandos.CTratamientos.ComandoBuscarProducto" Collapsed="true">
+    <Position X="31" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogicaDeNegocios\Comandos\Implementos\ComandoBuscarProducto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAO" Collapsed="true">
+    <Position X="34" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAO.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOAbono" Collapsed="true">
+    <Position X="22.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAQAAAAAAACAAAAAAAABAAIAAABAI=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOAbono.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOAgendaCitas" Collapsed="true">
+    <Position X="31.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABAAAAAAAAAAAgAAAAAEAAQAAAAAgAAgAQIAAAAAQ=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOAgendaCitas.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOBanco" Collapsed="true">
+    <Position X="40.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOBanco.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOCuentaBancaria" Collapsed="true">
+    <Position X="47.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOCuentaBancaria.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOCuentasPorCobrar" Collapsed="true">
+    <Position X="16" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAICiAAEAAIAAAAAAACAAABAAAAAAABA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOCuentasPorCobrar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOCuentasPorPagar" Collapsed="true">
+    <Position X="25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAAAAAAAEAAIACgAAEAAUAAAAAAAAQAIAAAAIEAgA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOCuentasPorPagar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOEmpleado">
+    <Position X="34" Y="10.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAACAAQAAAAAAAAQAAgAAAAAAIAAQA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOEmpleado.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOHistoriaClinica" Collapsed="true">
+    <Position X="43" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgIAABAAAAAIACBAIACFAAAAAAQAgAEAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOHistoriaClinica.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOImplemento" Collapsed="true">
+    <Position X="49.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAkAAAAAAAAgAAAAAAAAAAQABAAEAAAA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOImplemento.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOInventario" Collapsed="true">
+    <Position X="18.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOInventario.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOPresupuestoFactura" Collapsed="true">
+    <Position X="27.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFgQBAAAQAEIgAAQggAACAAAIEEAAgiBQAAAAABmSA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOPresupuestoFactura.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOProducto" Collapsed="true">
+    <Position X="36.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAAAgAAAAIAAAAAhAAgAAEAABAAAAAAE=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOProducto.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOProveedor" Collapsed="true">
+    <Position X="45.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAgAAAAAAAAgCABAQAAgCAEAAAAAAAAYA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOProveedor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAORol" Collapsed="true">
+    <Position X="52" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAORol.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOServerDireccion" Collapsed="true">
+    <Position X="20.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOServerDireccion.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOTratamiento" Collapsed="true">
+    <Position X="29.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAEIAIQAAhAAAQAAAAAAAAAMAAAIAAAAQA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOTratamiento.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Uricao.AccesoDeDatos.IDAOS.iDAOUsuario" Collapsed="true">
+    <Position X="38.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAIAAAAAAAAAAAAAQAAAAAAAAIAAA=</HashCode>
+      <FileName>AccesoDeDatos\IDAOS\iDAOUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

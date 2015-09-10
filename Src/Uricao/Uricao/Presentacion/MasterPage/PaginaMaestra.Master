@@ -1,0 +1,256 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="Uricao.Presentacion.MasterPage.PaginaMaestra" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../Estilos/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../JQuery/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../JQuery/css/redmond/jquery-ui-1.9.1.custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="../JQuery/css/redmond/jquery-ui-1.9.1.custom.css" rel="stylesheet" type="text/css" />
+
+    <script src="<%# ResolveUrl("../JQuery/js/jquery-1.8.2.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("../JQuery/js/jquery-ui-1.9.1.custom.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("../JQuery/js/jquery-ui-1.9.1.custom.min.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("../JQuery/js/jquery.dcverticalmegamenu.1.3.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("../JQuery/js/jquery.hoverIntent.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("../JQuery/js/login.js") %>" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript" >
+
+        jQuery(document).ready(function ($) {
+            $('#mega-1').dcVerticalMegaMenu();
+        });
+
+      </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">          
+                <h1 class="Logo">
+                      URICAO 
+                </h1>              
+            </div>         
+        </div>
+        <div class="content">
+            <div class="clear hideSkiplink">
+                <div id="loginContainer">
+                    <a href="#" id="loginButton"><span>Cerrar</span></a>
+                    <div style="clear:both"></div>
+                    <div id="loginBox">                
+                            <fieldset id="body">
+                                <fieldset>
+                                    <input type="button" class="button" value="Cerrar Sesion" style="width:100px; margin:6px;"  onclick="location.href='/Presentacion/Vista/PRolesUsuarios/LoginUricao.aspx'" />
+                                </fieldset>
+                            </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="leftColumn">
+                   <ul id="mega-1" class="mega-menu">
+                        <li><a href="/Presentacion/Vista/VAgendaCitas/HomeCita.aspx">Agenda o Citas</a>
+                            <ul>
+                                <li><a href="#">Gestionar Agenda</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VAgendaCitas/AgregarCita.aspx">Agrega Cita</a></li>
+                                        <li><a href="/Presentacion/Vista/VAgendaCitas/ConsultarCita.aspx">Consultar Cita</a></li>
+                                        
+                                    </ul>
+                                </li>              
+                            </ul>
+                        </li>
+                        <li><a href="/Presentacion/Vista/VHistoriaPaciente/HomeHistoriaPaciente.aspx">Historia Clinica</a>
+                            <ul>
+                                <li><a href="#">Gestionar historia Clinica</a>
+                                    <ul>
+                                          <li><a href="/Presentacion/Vista/VHistoriaPaciente/AgregarAntecedente.aspx">Nueva Historia Clinica</a></li>
+                                        <li><a href="/Presentacion/Vista/VHistoriaPaciente/ConsultarHistoriaClinica.aspx">Buscar Historia Clinica</a></li>                                      
+                                         <!-- <li><a href="/Presentacion/Vista/VHistoriaPaciente/AgregarSecuenciaTratamiento.aspx">Agregar Secuencia Tratamiento</a></li>
+                                        <li><a href="/Presentacion/Vista/VHistoriaPaciente/ConsultarHistoriaClinica.aspx">Consultar Historia Clinica</a></li>
+                                       <li><a href="/Presentacion/Vista/PHistoriaPaciente/ActivarDesactivarHistoriaClinica.aspx">Activar/Inactivar Historia Clinica</a></li>-->
+                                    </ul>
+                                </li>              
+                            </ul>
+                        </li>
+                            <li><a href="/Presentacion/Vista/VTratamientos/HomeTratamiento.aspx">Tratamientos</a>
+                            <ul>
+                                <li><a href="#">Gestionar tratamientos</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VTratamientos/ConsultarTratamiento.aspx">Consultar Tratamientos</a></li>
+                                        <li><a href="/Presentacion/Vista/VTratamientos/AgregarTratamiento.aspx">Agregar Tratamiento</a></li>
+                                        <li><a href="/Presentacion/Vista/VTratamientos/ModificarTratamiento.aspx">Modificar Tratamiento</a></li>
+                                        <li><a href="/Presentacion/Vista/VTratamientos/EliminarTratamiento.aspx">Activar/Desactivar Tratamiento</a></li>
+                                    </ul>
+                                </li>              
+                            </ul>
+                        </li>
+                         <li><a href="/Presentacion/Vista/VTrabajadoresEmpleados/HomeTrabajadores.aspx">Trabajadores o empleados</a>
+                            <ul>
+                                <li><a href="#">Gestionar trabajadores o empleados</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VTrabajadoresEmpleados/ConsultarEmpleados.aspx">Consultar Empleados</a></li>
+                                        <li><a href="/Presentacion/Vista/VTrabajadoresEmpleados/AgregarEmpleado.aspx">Agregar Empleado</a></li>
+                                        <li><a href="/Presentacion/Vista/VTrabajadoresEmpleados/ConsultarEmpleados.aspx">Modificar Empleado</a></li>
+                                        <li><a href="/Presentacion/Vista/VTrabajadoresEmpleados/ActivarInactivarEmpleados.aspx">Activar/Inactivar Empleado</a></li>
+                                    </ul>
+                                </li>              
+                            </ul>
+                        </li>
+                         <li><a href="/Presentacion/Vista/VPresupuestoFacturas/HomeFactura.aspx">Presupuestos y Facturas</a>
+                            <ul>
+                                <li><a href="#">Gestionar Presupuestos </a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VPresupuestoFacturas/ConsultarPresupuesto.aspx">Consultar Presupuesto</a></li>
+                                        <li><a href="/Presentacion/Vista/VPresupuestoFacturas/GenerarPresupuesto.aspx">Generar Presupuesto</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Gestionar Facturas</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VPresupuestoFacturas/ConsultarFactura.aspx">Consultar Factura</a></li>
+                                        <li><a href="/Presentacion/Vista/VPresupuestoFacturas/GenerarFacturaDatos.aspx">Generar Factura</a></li>
+                                    </ul>
+                                </li>               
+                            </ul>
+                        </li>
+                         <li><a href="/Presentacion/Vista/VCuentasPorCobrar/HomeCuentasPorCobrar.aspx">Cuentas por cobrar</a>
+                            <ul>
+                                <li><a href="#">Gestionar Cuentas por cobrar</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VCuentasPorCobrar/ConsultarCuentaCobrar.aspx">Consultar Cuentas Por Cobrar</a></li>
+                                    </ul>
+                                </li>              
+                            </ul>
+                        </li>
+                         <li><a href="#">Cuentas por pagar</a>
+                            <ul>
+                                <li><a href="#">Gestionar Cuentas por pagar</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VCuentasPorPagar/AbonarCuentasPorPagar1.aspx">Abonar Cuentas Por Pagar</a></li>
+                                        <li><a href="/Presentacion/Vista/VCuentasPorPagar/AgregarCuentasPorPagar1.aspx">Agregar Cuentas Por Pagar</a></li>
+                                        <li><a href="/Presentacion/Vista/VCuentasPorPagar/ActivarDesactivarCuentasPorPagar1.aspx">Activar/Inactivar Cuentas Por Pagar</a></li>
+                                        <li><a href="/Presentacion/Vista/VCuentasPorPagar/ConsultarCuentasPorPagar1.aspx">Consultar Cuentas Por Pagar</a></li>
+                                        <li><a href="/Presentacion/Vista/VCuentasPorPagar/ModificarCuentasPorPagar1.aspx">Modificar Cuentas Por Pagar</a></li>
+                                    </ul>
+                                </li>              
+                            </ul>
+                        </li>
+                         <li><a href="#">Proveedores</a>
+                            <ul>
+                                <li><a href="#">Gestionar Proveedores</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VProveedores/HomeProveedores.aspx">Consultar Proveedores</a></li>
+                                        <li><a href="/Presentacion/Vista/VProveedores/AgregarProveedor.aspx">Agregar Proveedor</a></li>
+                                        <!--<li><a href="/Presentacion/Vista/VProveedores/ActivarInactivarProveedores.aspx">Activar/Inactivar Proveedor</a></li>-->
+                                    </ul>
+                                </li>              
+                            </ul>
+                        </li>
+                         <li><a href="#">Productos o inventario</a>
+                            <ul>
+                                <li><a href="#">Gestionar Productos</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VProductosInventario/HomeProductos.aspx">Consultar Producto</a></li>
+                                        <li><a href="/Presentacion/Vista/VProductosInventario/AgregarProducto.aspx">Agregar Producto</a></li>
+                                        <!--<li><a href="/Presentacion/Vista/VProductosInventario/ActivarInactivarProductos.aspx">Activar/Inactivar Productos</a></li> -->                                 
+                                    </ul>
+                                </li>
+                                <li><a href="#">Gestionar Inventario</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VProductosInventario/HomeInventario.aspx">Consultar Inventario</a></li>
+                                        <li><a href="/Presentacion/Vista/VProductosInventario/SeleccionarProductoLote.aspx">Agregar Lote</a></li>
+                                        <li><a href="/Presentacion/Vista/VProductosInventario/SeleccionarProductoConsumo.aspx">Registrar Consumo</a></li>
+                                    </ul>
+                                </li>              
+                            </ul>
+    
+                        </li>
+
+                         <!--<li><a href="/Presentacion/Vista/PBancos/HomeBancos.aspx">Bancos</a>
+                            <ul>
+                                <li><a href="#">Gestionar Bancos</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/PBancos/ConsultarBanco.aspx">Consultar Cuentas Bancarias</a></li>
+                                        <li><a href="/Presentacion/Vista/PBancos/AgregarBanco.aspx">Agregar Cuentas Bancarias</a></li>
+                                        <li><a href="/Presentacion/Vista/PBancos/ActivarDesactivarBanco.aspx">Activar/Inactivar Cuentas Bancarias</a></li>
+                                    </ul>
+                                </li>              
+                            </ul>
+                        </li>-->
+                        <li><a href="/Presentacion/Vista/VRolesUsuarios/HomeUsuarios.aspx">Usuarios y Roles</a>
+                            <ul>
+                               <!-- <li><a href="#">Gestionar Usuarios </a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VRolesUsuarios/PRolesUsuariosUsuarios/ConsultarUsuarios.aspx">Consultar Usuario</a></li>
+                                        <li><a href="/Presentacion/Vista/VRolesUsuarios/PRolesUsuariosUsuarios/AgregarUsuario.aspx">Agregar Usuario</a></li>
+                                        <li><a href="/Presentacion/Vista/VRolesUsuarios/PRolesUsuariosUsuarios/ActivarDesactivarUsuarios.aspx">Activar/Inactivar Usuario</a></li>
+                                    </ul>
+                                </li>-->
+                                  <li><a href="#">Gestionar Roles</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/VRolesUsuarios/RolesPrivilegios/ConsultarRol.aspx">Consultar Rol</a></li>
+                                        <li><a href="/Presentacion/Vista/VRolesUsuarios/RolesPrivilegios/AgregarRol.aspx">Agregar Rol</a></li>
+                                        <!--<li><a href="/Presentacion/Vista/VRolesUsuarios/RolesPrivilegios/Activar-DesactivarRoles.aspx">Activar/Inactivar Rol</a></li>-->
+                                        <li><a href="/Presentacion/Vista/VRolesUsuarios/RolesPrivilegios/ModificarRoles.aspx">Modificar Rol</a></li>
+                                        <li><a href="/Presentacion/Vista/VRolesUsuarios/RolesPrivilegios/AsignarRoles.aspx">Asignar Rol</a></li>
+                                    </ul>
+                                </li>     
+                                <!--  
+                                        <li><a href="#">Gestionar Privilegios</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/PRolesUsuarios/RolesPrivilegios/ConsultarPrivilegio.aspx">Consultar Privilegio</a></li>
+                                        <li><a href="/Presentacion/Vista/PRolesUsuarios/RolesPrivilegios/AgregarPrivilegios.aspx">Agregar Privilegio</a></li>
+                                        <li><a href="/Presentacion/Vista/PRolesUsuarios/RolesPrivilegios/Activa-DesactivarPrivilegios.aspx">Activar/Inactivar Privilegio</a></li>
+                                        <li><a href="/Presentacion/Vista/PRolesUsuarios/RolesPrivilegios/ModificarPrivilegio.aspx">Modifiar Privilegio</a></li>
+                                        <li><a href="/Presentacion/Vista/PRolesUsuarios/RolesPrivilegios/AsignarPrivilegio.aspx">Asignar Privilegio</a></li>
+                                    </ul>
+                                </li> -->       
+                            </ul>
+                        </li>
+                         <!-- <li><a href="#">Cuentas de Usuario</a>
+                            <ul>
+                                <li><a href="#">Gestionar cuentas de Usuario</a>
+                                    <ul>
+                                        <li><a href="/Presentacion/Vista/PRolesUsuarios/ConsultarCuenta.aspx">Perfil</a></li>
+                                        <li><a href="/Presentacion/Vista/PRolesUsuarios/CambiarContraseña.aspx">Cambiar Contraseña</a></li>
+                                    </ul>
+                                </li>              
+                            </ul>
+                        </li>-->
+                    </ul>
+         
+            </div>   
+
+            <div class="migas">
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server"  >         
+                <RootNodeTemplate>
+                    <asp:HyperLink ID="HyperLink1" runat="server"
+                    Text='<%# Eval("title") %>' NavigateUrl='<%# Eval("url") %>' CssClass="migasLink"/>
+                </RootNodeTemplate>
+                    
+                <NodeTemplate>
+                    <asp:HyperLink ID="HyperLink2" runat="server"
+                    Text='<%# Eval("title") %>' NavigateUrl='<%# Eval("url") %>' CssClass="migasLink"/>
+                </NodeTemplate>
+            </asp:SiteMapPath>
+            </div>         
+
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </div>       
+         </div>
+        <div class="clear">
+        </div>
+
+        <div class="footer">
+            <p id="corpright"> &#169; 2012, Consultorios Odontologicos URICAO</p>
+        </div>
+     
+    </div>
+
+  </form>
+</body>
+</html>

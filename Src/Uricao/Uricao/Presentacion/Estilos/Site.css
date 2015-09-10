@@ -1,0 +1,422 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+* {
+margin:3px 2 0 0px;
+padding:0;
+    text-align: center;
+}
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: Verdana,Geneva,Kalimati,sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    font-family: Verdana,Geneva,Kalimati,sans-serif;
+}
+
+/* TABLA 
+----------------------------------------------------------*/
+fieldset tr
+{
+   padding: 20px;  
+}
+ fieldset td 
+ {
+    border-width: 1px;
+    padding:0px 20px 0px 20px;
+    border:0px;
+	border-style: inset;
+	
+ }
+
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    font-family: Verdana,Geneva,Kalimati,sans-serif;
+    color: #5c9ccc;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h1.Logo
+{
+  display:block;
+  width: 200px;
+  height: 52px;
+  background: url(../Imagenes/LogoUricao.png) 0 0 no-repeat;
+
+  text-indent: -20000px;
+}
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 980px;
+    background-color: #fff;
+    margin: 0px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: url(../Imagenes/TopUricao.jpg) #5c9ccc no-repeat;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 52px;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+
+    position:relative;
+    float:left;
+    padding:5px;
+    margin: 0px 0px 0px 10px;
+    width: 76%;
+    min-height: 525px;
+    top: 0px;
+    left: 0px;
+    
+}
+
+.content
+{
+    position:relative;
+    width:979px;
+}
+    
+.leftColumn
+{
+    float:left;
+    padding:0px;
+    margin: 0px;
+    height: 100%;
+    width:200px;
+    height: 550px;
+    
+}
+
+.leftColumnLogin
+{
+    float:left;
+    padding-left:0px;
+    padding-bottom:0px;
+    margin: 0px;
+    background: #5c9ccc ;
+    height: 100%;
+    width:200px;
+    height: 550px;
+    background: url(../Imagenes/odontologia.jpg) #5c9ccc no-repeat;
+    
+}
+
+
+.footer
+{
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+    height:27px;
+    text-align: left;
+    line-height: normal;
+    background-color: #5c9ccc;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#a6c9e2;
+    width:980px;
+    height: 35px;
+    
+}
+ ul 
+ {
+ list-style: none;
+ }
+
+/* Vertical Mega Menu Styles */
+.mega-menu{
+font: bold 13px Arial, sans-serif;
+line-height: 16px;
+background: #3a4f63;
+border-left: 1px solid #1B1B1B;
+position: relative; /* Required */
+margin:0px;
+padding:0px;
+}
+.mega-menu li a {
+display: block;
+color: #fff;
+padding: 12px 25px 12px 25px;
+text-decoration: none;
+text-align:center;
+border-top: 1px solid #555;
+border-bottom: 1px solid #222;
+border-right: 1px solid #1B1B1B;
+}
+.mega-menu li a:hover, .mega-menu li.mega-hover a {
+background: #465c71;
+color: #fff;
+border-right: 1px solid #4b4b4b;
+}
+.mega-menu li a.dc-mega {
+position: relative;
+}
+
+/* Mega menu container */
+.mega-menu li .sub-container {
+position: absolute; /* Required */
+background:  #465c71;
+padding: 10px 10px 0 10px;
+overflow: hidden;
+border: 1px solid #4b4b4b;
+border-left: none;
+}
+.mega-menu li .sub .row {
+width: 100%; overflow: hidden; /* Clear floats */
+}
+.mega-menu li .sub li {
+float: none;
+width: 150px;
+font-size: 1em;
+font-weight: normal;
+}
+.mega-menu li .sub li.mega-hdr {
+float: left; /* Required */
+margin: 0 5px 10px 5px;
+}
+.mega-menu li .sub a, .mega-menu.left li .sub a {
+background: none;
+border: none;
+float: none;
+color: #fff;
+padding: 7px 10px;
+display: block;
+text-decoration: none;
+font-size: 0.9em;
+text-align:center;
+}
+.mega-menu li .sub li.mega-hdr a.mega-hdr-a {
+padding: 5px 5px 5px 15px;
+margin-bottom: 5px;
+background: #4297d7;
+text-transform: uppercase;
+font-weight: bold;
+color: #000;
+}
+.mega-menu li .sub li.mega-hdr a.mega-hdr-a:hover {
+color:#000;
+}
+.mega-menu .sub li.mega-hdr li a {
+padding: 4px 5px 4px 20px;
+font-weight: normal;
+}
+.mega-menu .sub li.mega-hdr li a:hover {
+color: #a32403;
+}
+.mega-menu .sub ul li {
+padding-right: 0;
+}
+/* Styling for menu items with only 2 levels */
+.mega-menu li .sub-container.non-mega .sub {
+padding: 10px;}
+.mega-menu li .sub-container.non-mega li {
+padding: 0;
+margin: 0;
+width: 150px;
+}
+.mega-menu li .sub-container.non-mega li a {
+padding: 7px 5px 7px 22px;
+}
+.mega-menu li .sub-container.non-mega li a:hover {
+color: #a32403;
+}
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+    text-align:center;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.button
+{  
+
+    font-size:12px;
+   font-family:Verdana,sans-serif;
+   width:80px;
+   height:22px;
+   font-weight: bold;
+   text-decoration: none;
+   text-align: center;
+   color: #5c9ccc;
+   background-color: #dfeffc;
+   border-color: #a6c9e2;
+	
+}
+
+.superior
+{
+    text-align:center;
+    margin-top:30px;
+    height:32px;
+   
+}
+
+#corpright
+{
+    margin-left:10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.falla
+{
+    color:Red;
+}
+.Exito
+{
+      color: #3a4f63;
+}
+
+.migas
+{
+    text-align:left;
+    margin:0px;
+    color:#686;
+    padding-top:5px;
+    font-family: Verdana;font-size: smaller; text-decoration:none
+}
+
+
+.migasLink:link {font-family: Verdana;font-size: smaller; color:#0066FF; text-decoration:none}
+.migasLink:visited {font-family: Verdana;font-size: smaller; color:#0066FF; text-decoration:underline}
+.migasLink:hover {font-family: Verdana;font-size: smaller; color:#a32403; text-decoration:none}
+.fmigasLink:active {font-family: Verdana;font-size: smaller; color:#0066FF; text-decoration:none}

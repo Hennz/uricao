@@ -1,0 +1,28 @@
+﻿ .accordionHeader
+        {
+            color: white;
+            background-color: #00008B;
+            font: bold 11px auto "Trebuchet MS", Verdana;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 4px;
+            margin-top: 3px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -khtml-border-radius: 5px; /* for old Konqueror browsers */
+            
+        }
+        .accordionContent
+        {
+            background-color: #DBDBF2;
+            font: normal 10px auto Verdana, Arial;
+			font-size: 12px;
+            border: 1px gray;               
+            padding: 4px;
+            padding-top: 7px;
+            text-align:left;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -khtml-border-radius: 5px; /* for old Konqueror browsers */p: 7px;
+            overflow:visible;
+        }

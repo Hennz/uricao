@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~\Presentacion\Vista\Home\UricaoHome.aspx" title="Home"  description="Home">
+
+
+    <!--Modulo de Cuentas por Pagar-->
+    <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\HomeCuentasPorPagar.aspx" title="Cuentas Por Pagar"  description="Cuentas Por Pagar">
+      <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\AbonarCuentasPorPagar1.aspx" title="Abonar Cuentas Por Pagar"  description="Abonar Cuentas Por Pagar">
+        <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\AbonarCuentasPorPagar2.aspx" title="Abonar"  description="Abonar" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\AgregarCuentasPorPagar1.aspx" title="Agregar Cuentas Por Pagar"  description="Agregar Cuentas Por Pagar" />
+      <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\ActivarDesactivarCuentasPorPagar1.aspx" title="Activar/Inactivar Cuentas Por Pagar"  description="Activar/Inactivar Cuentas Por Pagar">
+        <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\ActivarDesactivarCuentasPorPagar2.aspx" title="Activar/Inactivar"  description="Activar/Inactivar" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\ConsultarCuentasPorPagar1.aspx" title="Consultar Cuentas Por Pagar"  description="Consultar Cuentas Por Pagar">
+        <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\ConsultarCuentasPorPagar2.aspx" title="Consultar "  description="Consultar " />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\ModificarCuentasPorPagar1.aspx" title="Modificar Cuentas Por Pagar"  description="Modificar Cuentas Por Pagar">
+        <siteMapNode url="~\Presentacion\Vista\PCuentasPorPagar\ModificarCuentasPorPagar2.aspx" title="Modificar"  description="Modificar" />
+      </siteMapNode>
+    </siteMapNode>
+    <!--fin Modulo de Cuentas por Pagar-->
+
+
+    <!--Modulo de Citas-->
+    <siteMapNode url="~\Presentacion\Vista\PAgendaCitas\HomeCita.aspx" title="Cita"  description="Cita">
+      <siteMapNode url="~\Presentacion\Vista\PAgendaCitas\AgregarCita.aspx" title="Agregar Cita"  description="Agregar Cita">
+        <siteMapNode url="~\Presentacion\Vista\PAgendaCitas\DetalleAgregarCita.aspx" title="Detalle Agregar Cita"  description="Detalle Agregar Cita" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PAgendaCitas\ConsultarCita.aspx" title="Consultar Cita"  description="Consultar Cita">
+        <siteMapNode url="~\Presentacion\Vista\PAgendaCitas\DetalleModificarCita.aspx" title="Detalle Modificar Cita"  description="Detalle Modifica rCita">
+          <siteMapNode url="~\Presentacion\Vista\PAgendaCitas\ModificarCita.aspx" title="Modificar Cita"  description="Modificar Cita">
+            <siteMapNode url="~\Presentacion\Vista\PAgendaCitas\DetalleCita.aspx" title="Detalle Cita"  description="Detalle Cita"/>
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <!--Fin modulo Citas-->
+
+    <!--Modulo Usuarios y Roles-->
+    <!-- Usuarios -->
+    <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\HomeUsuarios.aspx" title="Usuarios y Roles"  description="Usuarios y Roles">
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\PRolesUsuariosUsuarios\ConsultarUsuarios.aspx" title="Consultar Usuario"  description="Consultar Usuario">
+        <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\PRolesUsuariosUsuarios\ConsultarUsuarios2.aspx" title="Consultar Usuario 2"  description="Consultar Usuario 2">
+          <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\PRolesUsuariosUsuarios\ModifiarUsuarios.aspx" title="Modificar Usuario"  description="Modificar Usuario">
+            <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\PRolesUsuariosUsuarios\ModifiarUsuarios2.aspx" title="Modificar Usuario 2"  description="Modificar Usuario 2">
+            </siteMapNode>
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\PRolesUsuariosUsuarios\AgregarUsuario.aspx" title="Agregar Usuario"  description="Agregar Usuario" />
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\PRolesUsuariosUsuarios\ActivarDesactivarUsuarios.aspx" title="Activar/Inactivar Usuario"  description="Activar/Inactivar Usuario" />
+      <!-- Roles -->
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\ConsultarRol.aspx" title="Consultar Rol"  description="Consultar Rol">
+        <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\ConsultarRol2.aspx" title="Consultar Rol 2"  description="Consultar Rol 2"/>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\AgregarRol.aspx" title="Agregar Rol"  description="Agregar Rol"/>
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\Activar-DesactivarRoles.aspx" title="Activar/Inactivar Rol"  description="Activar/Inactivar Rol"/>
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\ModificarRoles.aspx" title="Modificar Rol"  description="Modificar Rol">
+        <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\ModificarRoles2.aspx" title="Modificar Rol 2"  description="Modificar Rol 2"/>
+      </siteMapNode>
+
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\AsignarRoles.aspx" title="Asignar Rol"  description="Asignar Rol">
+        <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\AsignarRoles2.aspx" title="Asignar Rol 2"  description="Asignar Rol 2">
+          <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\AsignarRoles3.aspx" title="Asignar Rol 3"  description="Asignar Rol 3" />
+        </siteMapNode>
+      </siteMapNode>
+      <!-- Privilegios -->
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\ConsultarPrivilegio.aspx" title="Consultar Privilegio"  description="Consultar Privilegio">
+        <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\ConsultarPrivilegio2.aspx" title="Consultar Privilegio 2"  description="Consultar Privilegio 2" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\AgregarPrivilegios.aspx" title="Agregar Privilegio"  description="Agregar Privilegio" />
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\Activa-DesactivarPrivilegios.aspx" title="Activar/Inactivar Privilegio"  description="Activar/Inactivar Privilegio" />
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\ModificarPrivilegio.aspx" title="Modificar Privilegio"  description="Modificar Privilegio">
+        <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\ModificarPrivilegio2.aspx" title="Modificar Privilegio 2"  description="Modificar Privilegio 2" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\AsignarPrivilegio.aspx" title="Asignar Privilegio"  description="Asignar Privilegio">
+        <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\AsignarPrivilegio2.aspx" title="Asignar Privilegio 2"  description="Asignar Privilegio 2">
+          <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\RolesPrivilegios\AsignarPrivilegio3.aspx" title="Asignar Privilegio 3"  description="Asignar Privilegio 3"/>
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <!--Fin modulo Usuarios y Roles-->
+
+    <!-- Cuenta de Usuario-->
+    <siteMapNode url="" title="Cuenta"  description="Cuenta">
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\ConsultarCuenta.aspx" title="Perfil"  description="Perfil"/>
+      <siteMapNode url="~\Presentacion\Vista\PRolesUsuarios\CambiarContraseña.aspx" title="Cambiar Contraseña"  description="Cambiar Contraseña"/>
+    </siteMapNode>
+    <!--Fin Cuenta de Usuario-->
+
+    <!--Modulo Bancos -->
+    <siteMapNode url="~\Presentacion\Vista\PBancos\HomeBancos.aspx" title="Bancos"  description="Bancos">
+      <siteMapNode url="~\Presentacion\Vista\PBancos\ConsultarBanco.aspx" title="Consultar Cuentas Bancarias"  description="Consultar Cuentas Bancarias">
+        <siteMapNode url="~\Presentacion\Vista\PBancos\DetalleBanco.aspx" title="Detalle Banco"  description="Detalle Banco">
+          <siteMapNode url="~\Presentacion\Vista\PBancos\DetalleModificarBanco.aspx" title="Modificar Banco"  description="Modificar Banco"/>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PBancos\AgregarBanco.aspx" title="Agregar Cuentas Bancarias"  description="Agregar Cuentas Bancarias"/>
+      <siteMapNode url="~\Presentacion\Vista\PBancos\ActivarDesactivarBanco.aspx" title="Activar/Inactivar Cuentas Bancarias"  description="Activar/Inactivar Cuentas Bancarias"/>
+    </siteMapNode>
+    <!--Fin modulo Bancos -->
+
+    <!--Modulo Cuentas Por Cobrar-->
+    <siteMapNode url="~\Presentacion\Vista\PCuentasPorCobrar\HomeCuentasPorCobrar.aspx" title="Cuentas Por Cobrar"  description="Cuentas Por Cobrar">
+      <siteMapNode url="~\Presentacion\Vista\PCuentasPorCobrar\ConsultarCuentaCobrar.aspx" title="Consultar Cuentas Por Cobrar"  description="Consultar Cuentas Por Cobrar">
+        <siteMapNode url="~\Presentacion\Vista\PCuentasPorCobrar\ModificarEstado.aspx" title="Modificar Estado"  description="Modificar Estado">
+          <siteMapNode url="~\Presentacion\Vista\PCuentasPorCobrar\DetalleFactura.aspx" title="Detalle Factura"  description="Detalle Factura">
+            <siteMapNode url="~\Presentacion\Vista\PCuentasPorCobrar\AgregarAbono.aspx" title="Agregar Abono"  description="Agregar Abono"/>
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PCuentasPorCobrar\DetalleCuentaCobrar.aspx" title="Detalle Cuenta"  description="Detalle Cuenta">
+        <siteMapNode url="~\Presentacion\Vista\PCuentasPorCobrar\ModificarEstado2.aspx" title="Modificar Cuenta Por Cobrar"  description="Modificar Cuenta Por Cobrar">
+          <siteMapNode url="~\Presentacion\Vista\PCuentasPorCobrar\DetalleFactura2.aspx" title="Detalle Factura"  description="Detalle Factura">
+            <siteMapNode url="~\Presentacion\Vista\PCuentasPorCobrar\AgregarAbono2.aspx" title="Agregar Abono"  description="Agregar Abono"/>
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+
+    </siteMapNode>
+    <!--Fin modulo Cuentas Por Cobrar-->
+
+    <!--Modulo Historia clinica-->
+    <siteMapNode url="~\Presentacion\Vista\VHistoriaPaciente\HomeHistoriaPaciente.aspx" title="Historia Clinica"  description="Historia Clinica">
+      <siteMapNode url="~\Presentacion\Vista\VHistoriaPaciente\ConsultarHistoriaClinica.aspx" title="Buscar Historia Clinica"  description="Buscar Historia Clinica">
+        <siteMapNode url="~\Presentacion\Vista\VHistoriaPaciente\AgregarAntecedente.aspx" title="Agregar Antecedente"  description="Agregar Antecedent">
+          <siteMapNode url="~\Presentacion\Vista\VHistoriaPaciente\AgregarHistoriaClinica.aspx" title="Agregar Historia Clinica"  description="Agregar Historia Clinica" />
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <!--Fin modulo Historia clinica-->
+
+    <!--Modulo Tratamientos-->
+
+    <siteMapNode url="~\Presentacion\Vista\PTratamientos\HomeTratamiento.aspx" title="Tratamientos"  description="Tratamientos">
+      <siteMapNode url="~\Presentacion\Vista\PTratamientos\ConsultarTratamiento.aspx" title="Consultar Tratamientos"  description="Cosultar Tratamientos">
+        <siteMapNode url="~\Presentacion\Vista\PTratamientos\ConsultarDetalleTratamiento.aspx" title="Consultar Detalle  Tratamiento"  description="Cosultar Detalle Tratamiento"/>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PTratamientos\AgregarTratamiento.aspx" title="Agregar Tratamiento"  description="Agregar Tratamiento">
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PTratamientos\ModificarTratamiento.aspx" title="Modificar Tratamiento"  description="Modificar Tratamiento">
+        <siteMapNode url="~\Presentacion\Vista\PTratamientos\ModificarTratamientoDetalle.aspx" title="Modificar Tratamiento Detalle"  description="Modificar Tratamiento Detalle"/>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PTratamientos\EliminarTratamiento.aspx" title="Activar/Desactivar Tratamiento"  description="Activar/Desactivar Tratamiento">
+        <siteMapNode url="~\Presentacion\Vista\PTratamientos\EliminarTratamientoDetalle.aspx" title="Activar/Desactivar Detalle Tratamiento"  description="Activar/Desactivar Detalle Tratamiento/">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <!--Fin modulo Tratamientos-->
+
+
+    <!--Modulo de Empleados-->
+    <siteMapNode url="~\Presentacion\Vista\PTrabajadoresEmpleados\HomeTrabajadores.aspx" title="Trabajadores o Empleados"  description="Trabajadores o Empleados">
+      <siteMapNode url="~\Presentacion\Vista\PTrabajadoresEmpleados\ConsultarEmpleados.aspx" title="Consultar Empleados"  description="Consultar Empleados">
+        <siteMapNode url="~\Presentacion\Vista\PTrabajadoresEmpleados\ModificarEmpleado.aspx" title="Modificar Empleado"  description="Modificar Empleado" />
+        <siteMapNode url="~\Presentacion\Vista\PTrabajadoresEmpleados\DetalleEmpleado.aspx" title="Ver Detalle Empleado"  description="Ver Detalle Empleado"/>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PTrabajadoresEmpleados\AgregarEmpleado.aspx" title="Agregar Empleado"  description="Agregar Empleado"/>
+      <siteMapNode url="~\Presentacion\Vista\PTrabajadoresEmpleados\ActivarInactivarEmpleados.aspx" title="Activar/Inactivar Empleado"  description="Activar/Inactivar Empleado/">
+      </siteMapNode>
+    </siteMapNode>
+    <!--Fin modulo Empleados-->
+
+    <!--Modulo de Presupuesto Facturas-->
+    <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\HomeFactura.aspx" title="Presupuestos y Facturas"  description="Presupuestos y Facturas">
+      <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\ConsultarPresupuesto.aspx" title="Consultar Presupuesto"  description="Consultar Presupuesto">
+        <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\ConsultarPresupuestoEspecifico.aspx" title="Consultar Presupuesto Especifico"  description="Consultar Presupuesto Especifico" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\GenerarPresupuesto.aspx" title="Generar Presupuesto"  description="Generar Presupuesto">
+        <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\GenerarPresupuesto_Detalle.aspx" title="Generar Detalle"  description="Generar Detalle">
+          <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\GenerarPresupuestoEspecifico.aspx" title="Presupuesto Especifico"  description="Presupuesto Especifico">
+            <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\GenerarPresupuesto_Operacion.aspx" title="Operacion"  description="Operacion"/>
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\ConsultarFactura.aspx" title="Consultar Factura"  description="Consultar Factura">
+        <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\ConsultaFactura_Detalle.aspx" title="Consultar Detalle"  description="Consultar Detalle" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\GenerarFacturaDatos.aspx" title="Generar Factura"  description="Generar Factura">
+        <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\GenerarFactura_Detalle.aspx" title="Generar Detalle"  description="Generar Detalle">
+          <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\GenerarFacturaEspecifica.aspx" title="Factura Especifica"  description="Factura Especifica">
+            <siteMapNode url="~\Presentacion\Vista\PPresupuestoFacturas\GenerarFactura_Operacion.aspx" title="Operacion"  description="Operacion"/>
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+
+    </siteMapNode>
+    <!--Fin modulo Presupuesto Facturas-->
+
+    <!--Modulo de inventario y productos-->
+    <siteMapNode url="" title="Productos o Inventario"  description="Productos e Inventario">
+      <!--Productos-->
+      <siteMapNode url="~\Presentacion\Vista\PProductosInventario\HomeProductos.aspx" title="Consultar Productos"  description="Consultar Productos">
+        <siteMapNode url="~\Presentacion\Vista\PProductosInventario\VerProducto.aspx" title="Ver Producto"  description="Ver Producto" >
+          <siteMapNode url="~\Presentacion\Vista\PProductosInventario\VerProductoDetallado.aspx" title="Ver Producto Detallado"  description="Ver Producto Detallado" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PProductosInventario\AgregarProducto.aspx" title="Agregar Producto"  description="Agregar Producto"/>
+      <siteMapNode url="~\Presentacion\Vista\PProductosInventario\ActivarInactivarProductos.aspx" title="Activar/Inactivar Productos"  description="Activar/Inactivar Productos"/>
+      <!-- Inventario-->
+      <siteMapNode url="~\Presentacion\Vista\PProductosInventario\HomeInventario.aspx" title="Consultar Inventario"  description="Consultar Inventario">
+        <siteMapNode url="~\Presentacion\Vista\PProductosInventario\VerDetalleInventario.aspx" title="Ver Detalle Inventario"  description="Ver Detalle Inventario" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PProductosInventario\SeleccionarProductoLote.aspx" title="Agregar Lote"  description="Agregar Lote">
+        <siteMapNode url="~\Presentacion\Vista\PProductosInventario\AgregarLote.aspx" title="Seleccionar Lote"  description="Seleccionar Lote" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PProductosInventario\SeleccionarProductoConsumo.aspx" title="Registrar Consumo"  description="Registrar Consumo">
+        <siteMapNode url="~\Presentacion\Vista\PProductosInventario\RegistroConsumo.aspx" title="Registro Consumo"  description="Registro Consumo" />
+      </siteMapNode>
+    </siteMapNode>
+    <!--Fin modulo de inventario y productos-->
+
+    <!--Modulo de Proveedores-->
+    <siteMapNode url="#" title="Proveedores"  description="Proveedores">
+      <siteMapNode url="~\Presentacion\Vista\PProveedores\HomeProveedores.aspx" title="Consultar Proveedores"  description="Consultar Proveedores">
+        <siteMapNode url="~\Presentacion\Vista\PProveedores\VerProveedor.aspx" title="Ver Proveedor"  description="Ver Proveedor">
+          <siteMapNode url="~\Presentacion\Vista\PProveedores\VerContacto.aspx" title="Ver Contacto"  description="Ver Contacto" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PProveedores\AgregarProveedor.aspx" title="Agregar Proveedor"  description="Agregar Proveedor">
+        <siteMapNode url="~\Presentacion\Vista\PProveedores\AgregarContacto.aspx" title="Agregar Contacto"  description="Agregar Contacto" />
+      </siteMapNode>
+      <siteMapNode url="~\Presentacion\Vista\PProveedores\ActivarInactivarProveedores.aspx" title="Activar/Inactivar Proveedor"  description="Activar/Inactivar Proveedor" />
+    </siteMapNode>
+    <!--Fin modulo de Proveedores-->
+
+  </siteMapNode>
+</siteMap>

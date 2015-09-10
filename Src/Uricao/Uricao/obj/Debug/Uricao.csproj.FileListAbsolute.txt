@@ -1,0 +1,7 @@
+E:\Marcelo\Escritorio\Finaly\Src\Uricao\Uricao\bin\Uricao.dll
+E:\Marcelo\Escritorio\Finaly\Src\Uricao\Uricao\bin\Uricao.pdb
+E:\Marcelo\Escritorio\Finaly\Src\Uricao\Uricao\bin\nunit.framework.dll
+E:\Marcelo\Escritorio\Finaly\Src\Uricao\Uricao\bin\nunit.mocks.dll
+E:\Marcelo\Escritorio\Finaly\Src\Uricao\Uricao\bin\nunit.framework.xml
+E:\Marcelo\Escritorio\Finaly\Src\Uricao\Uricao\obj\Debug\Uricao.dll
+E:\Marcelo\Escritorio\Finaly\Src\Uricao\Uricao\obj\Debug\Uricao.pdb

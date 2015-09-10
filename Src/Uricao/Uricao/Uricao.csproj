@@ -1,0 +1,1325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28C81204-9600-4713-908B-AEF247285F95}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Uricao</RootNamespace>
+    <AssemblyName>Uricao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="nunit.mocks, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.RegularExpressions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentacion\Estilos\Site.css" />
+    <Content Include="Presentacion\Imagenes\BannerServicios.jpg" />
+    <Content Include="Presentacion\Imagenes\Buscar.png" />
+    <Content Include="Presentacion\Imagenes\cambiar_estado.png" />
+    <Content Include="Presentacion\Imagenes\diente.png" />
+    <Content Include="Presentacion\Imagenes\Editar.png" />
+    <Content Include="Presentacion\Imagenes\Eliminar.png" />
+    <Content Include="Presentacion\Imagenes\HistoriaClinica.png" />
+    <Content Include="Presentacion\Imagenes\LogoUricao.png" />
+    <Content Include="Presentacion\Imagenes\odontograma.JPG" />
+    <Content Include="Presentacion\Imagenes\odontologia.jpg" />
+    <Content Include="Presentacion\Imagenes\odontologia2.jpg" />
+    <Content Include="Presentacion\Imagenes\pdf-icon.png" />
+    <Content Include="Presentacion\Imagenes\Sonrisa.jpg" />
+    <Content Include="Presentacion\Imagenes\TopUricao.jpg" />
+    <Content Include="Presentacion\Imagenes\users.png" />
+    <Content Include="Presentacion\JQuery\css\Acordion.css" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Presentacion\JQuery\css\redmond\jquery-ui-1.9.1.custom.css" />
+    <Content Include="Presentacion\JQuery\css\redmond\jquery-ui-1.9.1.custom.min.css" />
+    <Content Include="Presentacion\JQuery\css\style.css" />
+    <Content Include="Presentacion\JQuery\images\bar.png" />
+    <Content Include="Presentacion\JQuery\images\buttonbg.png" />
+    <Content Include="Presentacion\JQuery\images\buttonbgHover.png" />
+    <Content Include="Presentacion\JQuery\images\loginArrow.png" />
+    <Content Include="Presentacion\JQuery\images\loginbuttonbg.png" />
+    <Content Include="Presentacion\JQuery\js\jquery-1.8.2.js" />
+    <Content Include="Presentacion\JQuery\js\jquery-ui-1.9.1.custom.js" />
+    <Content Include="Presentacion\JQuery\js\jquery-ui-1.9.1.custom.min.js" />
+    <Content Include="Presentacion\JQuery\js\jquery.dcverticalmegamenu.1.3.js" />
+    <Content Include="Presentacion\JQuery\js\jquery.hoverIntent.js" />
+    <Content Include="Presentacion\JQuery\js\login.js" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\AgregarCita.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\ConfirmacionAccionCita.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\ConsultarCita.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\DetalleAgregarCita.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\DetalleCambiosModificarCita.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\DetalleCita.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\DetalleConsultarCita.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\DetalleFinalModificarCita.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\DetalleModificarCita.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\ModificarCitaConsulta.aspx" />
+    <Content Include="Presentacion\Vista\VBancos\ActivarDesactivarBanco.aspx" />
+    <Content Include="Presentacion\Vista\VBancos\AgregarBanco.aspx" />
+    <Content Include="Presentacion\Vista\VBancos\ConsultarBanco.aspx" />
+    <Content Include="Presentacion\Vista\VBancos\DetalleBanco.aspx" />
+    <Content Include="Presentacion\Vista\VBancos\DetalleModificarBanco.aspx" />
+    <Content Include="Presentacion\Vista\VBancos\ModificarBanco.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\AgregarAbono.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\ConsultarCuentaCobrar.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\AgregarAbono2.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\DetalleFactura2.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\ModificarEstado2.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\DetalleCuentaCobrar.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\DetalleCuentaPorCobrar.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\DetalleFactura.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\ModificarEstado.aspx" />
+    <Content Include="Presentacion\Vista\Home\UricaoHome.aspx" />
+    <Content Include="Presentacion\Vista\VAgendaCitas\HomeCita.aspx" />
+    <Content Include="Presentacion\Vista\VBancos\HomeBancos.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorCobrar\HomeCuentasPorCobrar.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\AbonarCuentasPorPagar1.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\AbonarCuentasPorPagar2.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\ActivarDesactivarCuentasPorPagar2.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\AgregarCuentasPorPagar1.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\ConsultarCuentasPorPagar1.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\ConsultarCuentasPorPagar2.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\ActivarDesactivarCuentasPorPagar1.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\ModificarCuentasPorPagar2.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\HomeCuentasPorPagar.aspx" />
+    <Content Include="Presentacion\Vista\VCuentasPorPagar\ModificarCuentasPorPagar1.aspx" />
+    <Content Include="Presentacion\Vista\VHistoriaPaciente\AgregarAntecedente.aspx" />
+    <Content Include="Presentacion\Vista\VHistoriaPaciente\AgregarHistoriaClinica.aspx" />
+    <Content Include="Presentacion\Vista\VHistoriaPaciente\ConsultarHistoriaClinica.aspx" />
+    <Content Include="Presentacion\Vista\VHistoriaPaciente\DetalleHistoriaClinica.aspx" />
+    <Content Include="Presentacion\Vista\VHistoriaPaciente\DetalleOdontograma.aspx" />
+    <Content Include="Presentacion\Vista\VHistoriaPaciente\HomeHistoriaPaciente.aspx" />
+    <Content Include="Presentacion\Vista\VHistoriaPaciente\ModificarAntecedente.aspx" />
+    <Content Include="Presentacion\Vista\VHistoriaPaciente\ModificarHistoriaClinica.aspx" />
+    <Content Include="Presentacion\Vista\VHistoriaPaciente\Odontograma.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\ConsultaFactura_Detalle.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\ConsultarFactura.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\ConsultarPresupuesto.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\ConsultarPresupuestoEspecifico.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaDatos.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaDetalle.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaDetalleCompleto.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaOperacion.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuestoEspecifico.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto_Detalle.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto_Detalle_completo.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto_Operacion.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\HomeFactura.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\HomePresupuesto.aspx" />
+    <Content Include="Presentacion\Vista\VPresupuestoFacturas\HomePresupuestoFactura.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\ActivarInactivarProductos.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\AgregarLote.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\AgregarProducto.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\HomeInventario.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\HomeProductos.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\RegistroConsumo.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\SeleccionarProductoConsumo.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\SeleccionarProductoLote.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\VerDetalleInventario.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\VerProducto.aspx" />
+    <Content Include="Presentacion\Vista\VProductosInventario\VerProductoDetallado.aspx" />
+    <Content Include="Presentacion\Vista\VProveedores\ActivarInactivarProveedores.aspx" />
+    <Content Include="Presentacion\Vista\VProveedores\AgregarContacto.aspx" />
+    <Content Include="Presentacion\Vista\VProveedores\AgregarProveedor.aspx" />
+    <Content Include="Presentacion\Vista\VProveedores\EditarContacto.aspx" />
+    <Content Include="Presentacion\Vista\VProveedores\EditarProveedor.aspx" />
+    <Content Include="Presentacion\Vista\VProveedores\HomeProveedores.aspx" />
+    <Content Include="Presentacion\Vista\VProveedores\VerContacto.aspx" />
+    <Content Include="Presentacion\Vista\VProveedores\VerProveedor.aspx" />
+    <Content Include="Presentacion\Vista\VTrabajadoresEmpleados\AgregarEmpleado.aspx" />
+    <Content Include="Presentacion\Vista\VTrabajadoresEmpleados\ConsultarDetalleEmpleado.aspx" />
+    <Content Include="Presentacion\Vista\VTrabajadoresEmpleados\ConsultarEmpleados.aspx" />
+    <Content Include="Presentacion\Vista\VTrabajadoresEmpleados\HomeTrabajadores.aspx" />
+    <Content Include="Presentacion\Vista\VTratamientos\AgregarTratamiento.aspx" />
+    <Content Include="Presentacion\Vista\VTratamientos\ConsultarDetalleTratamiento.aspx" />
+    <Content Include="Presentacion\Vista\VTratamientos\ConsultarTratamiento.aspx" />
+    <Content Include="Presentacion\Vista\VTratamientos\EliminarTratamiento.aspx" />
+    <Content Include="Presentacion\Vista\VTratamientos\HomeTratamiento.aspx" />
+    <Content Include="Presentacion\Vista\VTratamientos\ModificarTratamiento.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoDeDatos\Conexion\ConexionSqlServer.cs" />
+    <Compile Include="AccesoDeDatos\Conexion\FabricaConexion.cs" />
+    <Compile Include="AccesoDeDatos\Conexion\InterfazConexion\IConexionSqlServer.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAO.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOCuentasPorCobrar.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOAbono.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOAgendaCitas.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOBanco.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOCuentaBancaria.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOCuentasPorPagar.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOServerDireccion.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOEmpleado.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOHistoriaClinica.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOImplemento.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOInventario.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOPresupuestoFactura.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOProducto.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOProveedor.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAORol.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOSQLServer.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOTratamiento.cs" />
+    <Compile Include="AccesoDeDatos\DAOS\DAOUsuario.cs" />
+    <Compile Include="AccesoDeDatos\Excepciones A.Datos\ErrorConexionBD.cs" />
+    <Compile Include="AccesoDeDatos\Excepciones A.Datos\ExcepcionDAOHistoriaClinica.cs" />
+    <Compile Include="AccesoDeDatos\FabricaDAOS\FabricaDAO.cs" />
+    <Compile Include="AccesoDeDatos\FabricaDAOS\FabricaDAOSQLSERVER.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAO.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOAbono.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOAgendaCitas.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOBanco.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOCuentaBancaria.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOCuentasPorCobrar.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOCuentasPorPagar.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOEmpleado.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOHistoriaClinica.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOImplemento.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOInventario.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOPresupuestoFactura.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOProducto.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOProveedor.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAORol.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOServerDireccion.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOTratamiento.cs" />
+    <Compile Include="AccesoDeDatos\IDAOS\iDAOUsuario.cs" />
+    <Compile Include="Entidades\EAbonos\Abono.cs" />
+    <Compile Include="Entidades\EAgendaCitas\Cita.cs" />
+    <Compile Include="Entidades\EBancos\Banco.cs" />
+    <Compile Include="Entidades\EBancos\NumeroCuentaBanco.cs" />
+    <Compile Include="Entidades\ECuentasPorCobrar\Totales.cs" />
+    <Compile Include="Entidades\ECuentasPorCobrar\Detalle.cs" />
+    <Compile Include="Entidades\ECuentasPorCobrar\CuentaPorCobrar.cs" />
+    <Compile Include="Entidades\ECuentasPorCobrar\Ficticia.cs" />
+    <Compile Include="Entidades\ECuentasPorPagar\CuentaPorPagar.cs" />
+    <Compile Include="Entidades\EEmpleados\Empleado.cs" />
+    <Compile Include="Entidades\EHistoriaPaciente\Antecedente.cs" />
+    <Compile Include="Entidades\EHistoriaPaciente\DetalleSecuencia.cs" />
+    <Compile Include="Entidades\EHistoriaPaciente\HistoriaClinica.cs" />
+    <Compile Include="Entidades\EEntidad\Entidad.cs" />
+    <Compile Include="Entidades\EPresupuestoFacturas\Detalle_Presupuesto_Factura.cs" />
+    <Compile Include="Entidades\EPresupuestoFacturas\Factura.cs" />
+    <Compile Include="Entidades\EPresupuestoFacturas\Presupuesto.cs" />
+    <Compile Include="Entidades\EProductosInventario\Consumo.cs" />
+    <Compile Include="Entidades\EProductosInventario\Lote.cs" />
+    <Compile Include="Entidades\EProductosInventario\Producto.cs" />
+    <Compile Include="Entidades\EProveedores\Contacto.cs" />
+    <Compile Include="Entidades\EProveedores\Proveedor.cs" />
+    <Compile Include="Entidades\EProveedores\Telefono.cs" />
+    <Compile Include="Entidades\ERolesUsuarios\Privilegio.cs" />
+    <Compile Include="Entidades\ERolesUsuarios\Cliente.cs" />
+    <Compile Include="Entidades\ERolesUsuarios\Direccion.cs" />
+    <Compile Include="Entidades\ERolesUsuarios\IUsuarioControler.cs" />
+    <Compile Include="Entidades\ERolesUsuarios\Rol.cs" />
+    <Compile Include="Entidades\ERolesUsuarios\Usuario.cs" />
+    <Compile Include="Entidades\ETratamientos\Implemento.cs" />
+    <Compile Include="Entidades\ETratamientos\Tratamiento.cs" />
+    <Compile Include="Entidades\FabricasEntidad\FabricaEntidad.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNAbono\LogicaAbono.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNBancos\LogicaBanco.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNCuentasPorCobrar\LogicaCuentaPorCobrar.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNCuentasPorPagar\LogicaCuentaPorPagar.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNPresupuestoFacturas\LogicaFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNPresupuestoFacturas\LogicaPresupuestos.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNPresupuestoFacturas\ManejoPDF.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNProductosInventario\LogicaInventario.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNProductosInventario\LogicaProducto.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNProveedores\LogicaProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNRolesUsuarios\LogicaRol.cs" />
+    <Compile Include="LogicaDeNegocios\Clases\LNRolesUsuarios\LogicaUsuario.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Abono\ComandoAgregarAbono.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogicaDeNegocios\Comandos\Abono\ComandollenarGridAbonos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoAgregarCita.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoConsultarCitaFecha.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoConsultarCitaPorCedulaUsuario.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoConsultarCitaRangoFecha.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoConsultarHorarioDisponibleMedicoFecha.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoConsultarListaTratamientos.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoConsultarCitaPorNombreMedico.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Comando.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoCancelarCita.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoConfirmarCita.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoConsultarCita.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\AgendaCitas\ComandoModificarCita.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoAgregarTratamiento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoAgregarAbono1.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarTratamientoAsociado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarTratamiento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoAgregarTratamientoAsociado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarTratamientoEspecificoHistoriaClinica.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarTratamientoNoAsociado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarXEstatusTratamiento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarXIdTratamiento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoConsultarXNombreTratamiento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoEliminarTratamiento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoEliminarTratamientoAsociado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoValidarNumero.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CTratamientos\ComandoValidaString.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoBuscarAbonos.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoCalcularDeudaTotal.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoConsultarCuentaCedulaFechas.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoConsultarCuentaPorCedula.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoConsultarCuentaPorFecha.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoconsultarDetalleFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoModificarEstado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoObtenerCuentas.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoObtenerFacturaCedula.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoObtenerFacturaCF.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoObtenerUsuarioCedula.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoObtenerUsuarioFechas.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ComandoValidarEstado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorCobrar\ConsultarCuentaPorFecha.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoAbonarConsultarCuentasPorPagar.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoAbonarConsultarCuentasPorPagarFechas.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoAbonarObtenerCuentasPorPagarProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoActivarDesactivarCpp.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoActivarDesactivarObtenerCuentasPorPagarProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoCambiarEstatusCpp.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoConsultarCuentaPorPagar.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoConsultarCuentasPorPagarFechasActivar.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoConsultarCuentasPorPagarFechasProveedorActivar.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoConsultarEntreFechas.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoInsertarCuentasPorPagar.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoListaCuentasPorPagarEntreFechas.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandollenarAbonarCpp2.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoModificarCuentaPorPagar.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoMostarCuentasPorPagarFechasProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\CuentasPorPagar\ComandoMostrarListaCuentasPorPagar.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Empleado\ComandoCambiarEstadoEmpleado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Empleado\ComandoAgregarEmpleado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Empleado\ComandoConsultarCiudad.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Empleado\ComandoConsultarEstado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Empleado\ComandoConsultarPais.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Empleado\ComandoConsultarTodosEmpleados.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Empleado\ComandoModificarEmpleado.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoActivarDesactivarHistoriaClinica.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoActivarDesactivarSecuencia.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoAgregarAntecedente.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoAgregarHistoriaClinica.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoAgregarSecuencia.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoBuscarUltimaHistoria.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoConsultarAntecedente.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoConsultarHistoriaClinica.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoConsultarSecuencia.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoConsultarSecuenciaXid.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoConsultarTodasHistoriaClinica.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoModificarAntecedentes.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoModificarHistoriaClinica.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\HistoriaClinica\ComandoModificarSecuencia.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Implementos\ComandoEliminarTratamientoImplementos.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Implementos\ComandoConsultarListaImplementos.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Implementos\ComandoConsultarImplementoPorNombre.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Implementos\ComandoCargarListaProductoNoImplemento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Implementos\ComandoBuscarProducto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Implementos\ComandoAgregarImplemento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoregresarDatosUsuario.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoSubtotalPresupuesto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoAgregarPresupuesto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoAgregarFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarDatosBasicosUsuarioPresupuesto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarDetallePresupuesto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarPresupuestoXCI.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarPresupuestoNumero.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarPresupuestosRangoFechas.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarCedulaPresupuesto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarPresupuestosTodos.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoObtenerListaFacturaFechas.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarFacturasTodas.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarFacturasNumero.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarFacturaXIdTratamiento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoObtenerFacturaXCI.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarCedulaFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoRegresaIdDireccionUsuario.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoRegresarCostoTratamiento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoRegresarIdUsuario.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoRegresarListadoXNombre.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoSubtotalFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandovalidarUsuario.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarDireccionEstadoFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarDireccionMunicipioFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarDireccionCalleFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarDireccionCiudadFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarDireccionEdificioFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\PresupuestoFacturas\ComandoConsultarDetalleFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Inventario\ComandoAgregarInventario.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoAgregarDetalleProducto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoAgregarProducto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoCargarListaProductoImplemento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoCargarListaProductoNombre.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoConsultarCategoria.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoEditarProductoGenerico.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoListaProductosNoImplemento.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoObtenerMarcasXProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoObtenerProductos.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoObtenerProductosDetallados.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\ProductosInventario\Productos\ComandoEditarProducto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoAgregarContacto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoAgregarProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoConsularIdProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoConsultarContacto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoConsultarProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoConsultarProveedoresPorNombre.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoConsultarProveedoresPorRif.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoConsultarTodosProveedores.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoModificarProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Proveedores\ComandoVerContacto.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Rol\ComandoConsultarRol.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Rol\ComandoModificarRol.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Usuario\ComandoAgregarUsuario.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Usuario\ComandoConsultarUsuario.cs" />
+    <Compile Include="LogicaDeNegocios\Comandos\Usuario\ComandoModificarUsuario.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionCita.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionConexion.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionCuentaPorPagar.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionEmpleado.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionesPresupuestoFactura\ExcepcionPresupuestoFacturaVista.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionesProductos\ExcepcionInventario.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionesProductos\ExcepcionNulo.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionesProductos\ExcepcionProducto.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionesProductos\ExcepcionSql.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionImplemento.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionProveedor.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionRoles.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionTratamiento.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExceptionCuentaPorPagar.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExceptionHistoriaClinica.cs" />
+    <Compile Include="LogicaDeNegocios\Excepciones\ExcepcionesPresupuestoFactura\ExceptionPresupuestoFactura.cs" />
+    <Compile Include="LogicaDeNegocios\Fabricas\FabricaComando.cs" />
+    <Compile Include="Presentacion\Contrato\CAgendaCitas\IContratoAgregarCita.cs" />
+    <Compile Include="Presentacion\Contrato\CAgendaCitas\IContratoConfirmacionAccionCita.cs" />
+    <Compile Include="Presentacion\Contrato\CAgendaCitas\IContratoConsultarCita.cs" />
+    <Compile Include="Presentacion\Contrato\CAgendaCitas\IContratoDetalleAgregarCita.cs" />
+    <Compile Include="Presentacion\Contrato\CAgendaCitas\IContratoDetalleCambiosModificarCita.cs" />
+    <Compile Include="Presentacion\Contrato\CAgendaCitas\IContratoDetalleConsultarCita.cs" />
+    <Compile Include="Presentacion\Contrato\CAgendaCitas\IContratoDetalleFinalModificarCita.cs" />
+    <Compile Include="Presentacion\Contrato\CAgendaCitas\IContratoModificarCita.cs" />
+    <Compile Include="Presentacion\Contrato\CAgendaCitas\IContratoModificarCitaConsulta.cs" />
+    <Compile Include="Presentacion\Contrato\CBancos\IContratoConsultarBanco.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorCobrar\IContratoAgregarAbono.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorCobrar\IContratoAgregarAbono2.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorCobrar\IContratoConsultarCuentaCobrar.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorCobrar\IContratoDetalleCuentaCobrar.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorCobrar\IContratoDetalleCuentaPorCobrar.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorCobrar\IContratoDetalleFactura.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorCobrar\IContratoDetalleFactura2.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorCobrar\IContratoModificarEstado.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorCobrar\IContratoModificarEstado2.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorPagar\IContratoAbonarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorPagar\IContratoAbonarCuentasPorPagar2.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorPagar\IContratoActivarDesactivarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorPagar\IContratoActivarDesactivarCuentasPorPagar2.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorPagar\IContratoAgregarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorPagar\IContratoConsultarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorPagar\IContratoConsultarCuentasPorPagar2.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorPagar\IContratoModificarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Contrato\CCuentasPorPagar\IContratoModificarCuentasPorPagar2.cs" />
+    <Compile Include="Presentacion\Contrato\CHistoriaPaciente\IContratoAgregarAntecedente.cs" />
+    <Compile Include="Presentacion\Contrato\CHistoriaPaciente\IContratoAgregarHistoriaClinica.cs" />
+    <Compile Include="Presentacion\Contrato\CHistoriaPaciente\IContratoConsultarHistoriaClinica.cs" />
+    <Compile Include="Presentacion\Contrato\CHistoriaPaciente\IContratoDetalleHistoriaClinica.cs" />
+    <Compile Include="Presentacion\Contrato\CHistoriaPaciente\IContratoDetalleOdontodiagrama.cs" />
+    <Compile Include="Presentacion\Contrato\CHistoriaPaciente\IContratoModificarAntecedente.cs" />
+    <Compile Include="Presentacion\Contrato\CHistoriaPaciente\IContratoModificarHistoriaClinica.cs" />
+    <Compile Include="Presentacion\Contrato\CHistoriaPaciente\IContratoOdontodiagrama.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoGenerarFacturaDatos.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoGenerarFacturaDetalle.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoGenerarFacturaDetalleCompleto.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoConsultarFactura.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoConsultaFactura_Detalle.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoConsultarPresupuesto.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoConsultarPresupuestoEspecifico.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoGenerarPresupuesto.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoGenerarPresupuesto_Detalle.cs" />
+    <Compile Include="Presentacion\Contrato\CPresupuestoFacturas\IContratoGenerarPresupuestoEspecifico.cs" />
+    <Compile Include="Presentacion\Contrato\CProductosInventario\IContratoAgregarProducto.cs" />
+    <Compile Include="Presentacion\Contrato\CProductosInventario\IContratoHomeInventario.cs" />
+    <Compile Include="Presentacion\Contrato\CProductosInventario\IContratoHomeProducto.cs" />
+    <Compile Include="Presentacion\Contrato\CProductosInventario\IContratoVerProducto.cs" />
+    <Compile Include="Presentacion\Contrato\CProductosInventario\IContratoVerProductoDetallado.cs" />
+    <Compile Include="Presentacion\Contrato\CProductosInventario\ISeleccionarProductoConsumo.cs" />
+    <Compile Include="Presentacion\Contrato\CProveedores\IContratoAgregarContacto.cs" />
+    <Compile Include="Presentacion\Contrato\CProveedores\IContratoAgregarProveedor.cs" />
+    <Compile Include="Presentacion\Contrato\CProveedores\IContratoHomeProveedores.cs" />
+    <Compile Include="Presentacion\Contrato\CProveedores\IContratoVerContacto.cs" />
+    <Compile Include="Presentacion\Presentador\PProductosInventario\PresentadorHomeProducto.cs" />
+    <Compile Include="Presentacion\Presentador\PProductosInventario\PresentadorSeleccionarProductoConsumo.cs" />
+    <Compile Include="Presentacion\Presentador\PProveedores\PresentadorAgregarContacto.cs" />
+    <Compile Include="Presentacion\Presentador\PProveedores\PresentadorAgregarProveedor.cs" />
+    <Compile Include="Presentacion\Contrato\CRolesUsuarios\IContratoActivarInactivarUsuario.cs" />
+    <Compile Include="Presentacion\Contrato\CRolesUsuarios\IContratoAgregarUsuario.cs" />
+    <Compile Include="Presentacion\Contrato\CRolesUsuarios\IContratoConsultarRol.cs" />
+    <Compile Include="Presentacion\Contrato\CRolesUsuarios\IContratoConsultarUsuario.cs" />
+    <Compile Include="Presentacion\Contrato\CRolesUsuarios\IContratoModificarRol.cs" />
+    <Compile Include="Presentacion\Contrato\CRolesUsuarios\IContratoModificarUsuario.cs" />
+    <Compile Include="Presentacion\Contrato\CTrabajadoresEmpleados\IContratoAgregarEmpleado.cs" />
+    <Compile Include="Presentacion\Contrato\CTrabajadoresEmpleados\IContratoConsultarDetalleEmpleado.cs" />
+    <Compile Include="Presentacion\Contrato\CTrabajadoresEmpleados\IContratoConsultarEmpleados.cs" />
+    <Compile Include="Presentacion\Contrato\CTratamientos\IContratoAgregarTratamiento.cs" />
+    <Compile Include="Presentacion\Contrato\CTratamientos\IContratoConsultarDetalleTratamiento.cs" />
+    <Compile Include="Presentacion\Contrato\CTratamientos\IContratoConsultarTratamiento.cs" />
+    <Compile Include="Presentacion\Contrato\CTratamientos\IContratoEliminarTratamiento.cs" />
+    <Compile Include="Presentacion\Contrato\CTratamientos\IContratoModificarTratamiento.cs" />
+    <Compile Include="Presentacion\MasterPage\LoginMaestro.Master.cs">
+      <DependentUpon>LoginMaestro.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\MasterPage\LoginMaestro.Master.designer.cs">
+      <DependentUpon>LoginMaestro.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\MasterPage\PaginaMaestra.Master.cs">
+      <DependentUpon>PaginaMaestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\MasterPage\PaginaMaestra.Master.designer.cs">
+      <DependentUpon>PaginaMaestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Presentador\PAgendaCitas\PresentadorAgregarCita.cs" />
+    <Compile Include="Presentacion\Presentador\PAgendaCitas\PresentadorConfirmacionAccionCita.cs" />
+    <Compile Include="Presentacion\Presentador\PAgendaCitas\PresentadorConsultarCita.cs" />
+    <Compile Include="Presentacion\Presentador\PAgendaCitas\PresentadorDetalleAgregarCita.cs" />
+    <Compile Include="Presentacion\Presentador\PAgendaCitas\PresentadorDetalleCambiosModificarCita.cs" />
+    <Compile Include="Presentacion\Presentador\PAgendaCitas\PresentadorDetalleFinalModificarCita.cs" />
+    <Compile Include="Presentacion\Presentador\PAgendaCitas\PresentadorModificarCita.cs" />
+    <Compile Include="Presentacion\Presentador\PAgendaCitas\PresentadorModificarCitaConsulta.cs" />
+    <Compile Include="Presentacion\Presentador\PBancos\PresentadorConsultarBanco.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorCobrar\PresentadorModificarEstado2.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorCobrar\PresentadorAgregarAbono.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorCobrar\PresentadorAgregarAbono2.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorCobrar\PresentadorConsultarCuentaCobrar.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorCobrar\PresentadorDetalleCuentaCobrar.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorCobrar\PresentadorDetalleCuentaPorCobrar.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorCobrar\PresentadorDetalleFactura.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorCobrar\PresentadorDetalleFactura2.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorCobrar\PresentadorModificarEstado.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorPagar\PresentadorAbonarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorPagar\PresentadorAbonarCuentasPorPagar2.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorPagar\PresentadorActivarDesactivarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorPagar\PresentadorActivarDesactivarCuentasPorPagar2.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorPagar\PresentadorAgregarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorPagar\PresentadorConsultarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorPagar\PresentadorConsultarCuentasPorPagar2.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorPagar\PresentadorModificarCuentasPorPagar1.cs" />
+    <Compile Include="Presentacion\Presentador\PCuentasPorPagar\PresentadorModificarCuentasPorPagar2.cs" />
+    <Compile Include="Presentacion\Presentador\PHistoriaPaciente\PresentadorAgregarAntecendente.cs" />
+    <Compile Include="Presentacion\Presentador\PHistoriaPaciente\PresentadorAgregarHistoriaClinica.cs" />
+    <Compile Include="Presentacion\Presentador\PHistoriaPaciente\PresentadorConsultarHistoriaClinica.cs" />
+    <Compile Include="Presentacion\Presentador\PHistoriaPaciente\PresentadorDetalleHistoriaClinica.cs" />
+    <Compile Include="Presentacion\Presentador\PHistoriaPaciente\PresentadorDetalleOdontodiagrama.cs" />
+    <Compile Include="Presentacion\Presentador\PHistoriaPaciente\PresentadorModificarAntecedente.cs" />
+    <Compile Include="Presentacion\Presentador\PHistoriaPaciente\PresentadorModificarHistoriaClinica.cs" />
+    <Compile Include="Presentacion\Presentador\PHistoriaPaciente\PresentadorOdontodiagrama.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorGenerarPresupuesto.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorGenerarPresupuesto_Detalle.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorConsultarPresupuestoEspecifico.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorConsultarPresupuesto.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorConsultaFactura_Detalle.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorConsultarFactura.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorGenerarFacturaDatos.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorGenerarFacturaDetalle.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorGenerarFacturaDetalleCompleto.cs" />
+    <Compile Include="Presentacion\Presentador\PPresupuestoFacturas\PresentadorGenerarPresupuestoEspecifico.cs" />
+    <Compile Include="Presentacion\Presentador\PProductosInventario\PresentadorAgregarProducto.cs" />
+    <Compile Include="Presentacion\Presentador\PProductosInventario\PresentadorHomeInventario.cs" />
+    <Compile Include="Presentacion\Presentador\PProductosInventario\PresentadorVerProducto.cs" />
+    <Compile Include="Presentacion\Presentador\PProductosInventario\PresentadorVerProductoDetallado.cs" />
+    <Compile Include="Presentacion\Presentador\PProveedores\PresentadorHomeProveedores.cs" />
+    <Compile Include="Presentacion\Presentador\PProveedores\PresentadorVerContacto.cs" />
+    <Compile Include="Presentacion\Presentador\PRolesUsuarios\PresentadorConsultarRol.cs" />
+    <Compile Include="Presentacion\Presentador\PRolesUsuarios\PresentadorConsultarUsuario.cs" />
+    <Compile Include="Presentacion\Presentador\PRolesUsuarios\PresentadorModificarRol.cs" />
+    <Compile Include="Presentacion\Presentador\PTrabajadoresEmpleados\PresentadorAgregarEmpleado.cs" />
+    <Compile Include="Presentacion\Presentador\PTrabajadoresEmpleados\PresentadorConsultarDetalleEmpleado.cs" />
+    <Compile Include="Presentacion\Presentador\PTrabajadoresEmpleados\PresentadorConsultarEmpleados.cs" />
+    <Compile Include="Presentacion\Presentador\PTratamientos\PresentadorAgregarTratamiento.cs" />
+    <Compile Include="Presentacion\Presentador\PTratamientos\PresentadorConsultarDetalleTratamiento.cs" />
+    <Compile Include="Presentacion\Presentador\PTratamientos\PresentadorConsultarTratamiento.cs" />
+    <Compile Include="Presentacion\Presentador\PTratamientos\PresentadorEliminarTratamiento.cs" />
+    <Compile Include="Presentacion\Presentador\PTratamientos\PresentadorModificarTratamiento.cs" />
+    <Compile Include="Presentacion\Vista\VAgendaCitas\AgregarCita.aspx.cs">
+      <DependentUpon>AgregarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\AgregarCita.aspx.designer.cs">
+      <DependentUpon>AgregarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\ConfirmacionAccionCita.aspx.cs">
+      <DependentUpon>ConfirmacionAccionCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\ConfirmacionAccionCita.aspx.designer.cs">
+      <DependentUpon>ConfirmacionAccionCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\ConsultarCita.aspx.cs">
+      <DependentUpon>ConsultarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\ConsultarCita.aspx.designer.cs">
+      <DependentUpon>ConsultarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleAgregarCita.aspx.cs">
+      <DependentUpon>DetalleAgregarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleAgregarCita.aspx.designer.cs">
+      <DependentUpon>DetalleAgregarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleCambiosModificarCita.aspx.cs">
+      <DependentUpon>DetalleCambiosModificarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleCambiosModificarCita.aspx.designer.cs">
+      <DependentUpon>DetalleCambiosModificarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleCita.aspx.cs">
+      <DependentUpon>DetalleCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleCita.aspx.designer.cs">
+      <DependentUpon>DetalleCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleConsultarCita.aspx.cs">
+      <DependentUpon>DetalleConsultarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleConsultarCita.aspx.designer.cs">
+      <DependentUpon>DetalleConsultarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleFinalModificarCita.aspx.cs">
+      <DependentUpon>DetalleFinalModificarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleFinalModificarCita.aspx.designer.cs">
+      <DependentUpon>DetalleFinalModificarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleModificarCita.aspx.cs">
+      <DependentUpon>DetalleModificarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\DetalleModificarCita.aspx.designer.cs">
+      <DependentUpon>DetalleModificarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\ModificarCitaConsulta.aspx.cs">
+      <DependentUpon>ModificarCitaConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\ModificarCitaConsulta.aspx.designer.cs">
+      <DependentUpon>ModificarCitaConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\ActivarDesactivarBanco.aspx.cs">
+      <DependentUpon>ActivarDesactivarBanco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\ActivarDesactivarBanco.aspx.designer.cs">
+      <DependentUpon>ActivarDesactivarBanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\AgregarBanco.aspx.cs">
+      <DependentUpon>AgregarBanco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\AgregarBanco.aspx.designer.cs">
+      <DependentUpon>AgregarBanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\ConsultarBanco.aspx.cs">
+      <DependentUpon>ConsultarBanco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\ConsultarBanco.aspx.designer.cs">
+      <DependentUpon>ConsultarBanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\DetalleBanco.aspx.cs">
+      <DependentUpon>DetalleBanco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\DetalleBanco.aspx.designer.cs">
+      <DependentUpon>DetalleBanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\DetalleModificarBanco.aspx.cs">
+      <DependentUpon>DetalleModificarBanco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\DetalleModificarBanco.aspx.designer.cs">
+      <DependentUpon>DetalleModificarBanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\ModificarBanco.aspx.cs">
+      <DependentUpon>ModificarBanco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\ModificarBanco.aspx.designer.cs">
+      <DependentUpon>ModificarBanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\AgregarAbono.aspx.cs">
+      <DependentUpon>AgregarAbono.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\AgregarAbono.aspx.designer.cs">
+      <DependentUpon>AgregarAbono.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\ConsultarCuentaCobrar.aspx.cs">
+      <DependentUpon>ConsultarCuentaCobrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\ConsultarCuentaCobrar.aspx.designer.cs">
+      <DependentUpon>ConsultarCuentaCobrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\AgregarAbono2.aspx.cs">
+      <DependentUpon>AgregarAbono2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\AgregarAbono2.aspx.designer.cs">
+      <DependentUpon>AgregarAbono2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\DetalleFactura2.aspx.cs">
+      <DependentUpon>DetalleFactura2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\DetalleFactura2.aspx.designer.cs">
+      <DependentUpon>DetalleFactura2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\ModificarEstado2.aspx.cs">
+      <DependentUpon>ModificarEstado2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\ModificarEstado2.aspx.designer.cs">
+      <DependentUpon>ModificarEstado2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\DetalleCuentaCobrar.aspx.cs">
+      <DependentUpon>DetalleCuentaCobrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\DetalleCuentaCobrar.aspx.designer.cs">
+      <DependentUpon>DetalleCuentaCobrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\DetalleCuentaPorCobrar.aspx.cs">
+      <DependentUpon>DetalleCuentaPorCobrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\DetalleCuentaPorCobrar.aspx.designer.cs">
+      <DependentUpon>DetalleCuentaPorCobrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\DetalleFactura.aspx.cs">
+      <DependentUpon>DetalleFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\DetalleFactura.aspx.designer.cs">
+      <DependentUpon>DetalleFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\ModificarEstado.aspx.cs">
+      <DependentUpon>ModificarEstado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\ModificarEstado.aspx.designer.cs">
+      <DependentUpon>ModificarEstado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\Home\UricaoHome.aspx.cs">
+      <DependentUpon>UricaoHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\Home\UricaoHome.aspx.designer.cs">
+      <DependentUpon>UricaoHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\HomeCita.aspx.cs">
+      <DependentUpon>HomeCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VAgendaCitas\HomeCita.aspx.designer.cs">
+      <DependentUpon>HomeCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\HomeBancos.aspx.cs">
+      <DependentUpon>HomeBancos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VBancos\HomeBancos.aspx.designer.cs">
+      <DependentUpon>HomeBancos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\HomeCuentasPorCobrar.aspx.cs">
+      <DependentUpon>HomeCuentasPorCobrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorCobrar\HomeCuentasPorCobrar.aspx.designer.cs">
+      <DependentUpon>HomeCuentasPorCobrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\AbonarCuentasPorPagar1.aspx.cs">
+      <DependentUpon>AbonarCuentasPorPagar1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\AbonarCuentasPorPagar1.aspx.designer.cs">
+      <DependentUpon>AbonarCuentasPorPagar1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\AbonarCuentasPorPagar2.aspx.cs">
+      <DependentUpon>AbonarCuentasPorPagar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\AbonarCuentasPorPagar2.aspx.designer.cs">
+      <DependentUpon>AbonarCuentasPorPagar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ActivarDesactivarCuentasPorPagar2.aspx.cs">
+      <DependentUpon>ActivarDesactivarCuentasPorPagar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ActivarDesactivarCuentasPorPagar2.aspx.designer.cs">
+      <DependentUpon>ActivarDesactivarCuentasPorPagar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\AgregarCuentasPorPagar1.aspx.cs">
+      <DependentUpon>AgregarCuentasPorPagar1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\AgregarCuentasPorPagar1.aspx.designer.cs">
+      <DependentUpon>AgregarCuentasPorPagar1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ConsultarCuentasPorPagar1.aspx.cs">
+      <DependentUpon>ConsultarCuentasPorPagar1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ConsultarCuentasPorPagar1.aspx.designer.cs">
+      <DependentUpon>ConsultarCuentasPorPagar1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ConsultarCuentasPorPagar2.aspx.cs">
+      <DependentUpon>ConsultarCuentasPorPagar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ConsultarCuentasPorPagar2.aspx.designer.cs">
+      <DependentUpon>ConsultarCuentasPorPagar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ActivarDesactivarCuentasPorPagar1.aspx.cs">
+      <DependentUpon>ActivarDesactivarCuentasPorPagar1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ActivarDesactivarCuentasPorPagar1.aspx.designer.cs">
+      <DependentUpon>ActivarDesactivarCuentasPorPagar1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ModificarCuentasPorPagar2.aspx.cs">
+      <DependentUpon>ModificarCuentasPorPagar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ModificarCuentasPorPagar2.aspx.designer.cs">
+      <DependentUpon>ModificarCuentasPorPagar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\HomeCuentasPorPagar.aspx.cs">
+      <DependentUpon>HomeCuentasPorPagar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\HomeCuentasPorPagar.aspx.designer.cs">
+      <DependentUpon>HomeCuentasPorPagar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ModificarCuentasPorPagar1.aspx.cs">
+      <DependentUpon>ModificarCuentasPorPagar1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VCuentasPorPagar\ModificarCuentasPorPagar1.aspx.designer.cs">
+      <DependentUpon>ModificarCuentasPorPagar1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\AgregarAntecedente.aspx.cs">
+      <DependentUpon>AgregarAntecedente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\AgregarAntecedente.aspx.designer.cs">
+      <DependentUpon>AgregarAntecedente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\AgregarHistoriaClinica.aspx.cs">
+      <DependentUpon>AgregarHistoriaClinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\AgregarHistoriaClinica.aspx.designer.cs">
+      <DependentUpon>AgregarHistoriaClinica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\ConsultarHistoriaClinica.aspx.cs">
+      <DependentUpon>ConsultarHistoriaClinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\ConsultarHistoriaClinica.aspx.designer.cs">
+      <DependentUpon>ConsultarHistoriaClinica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\DetalleHistoriaClinica.aspx.cs">
+      <DependentUpon>DetalleHistoriaClinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\DetalleHistoriaClinica.aspx.designer.cs">
+      <DependentUpon>DetalleHistoriaClinica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\DetalleOdontograma.aspx.cs">
+      <DependentUpon>DetalleOdontograma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\DetalleOdontograma.aspx.designer.cs">
+      <DependentUpon>DetalleOdontograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\HomeHistoriaPaciente.aspx.cs">
+      <DependentUpon>HomeHistoriaPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\HomeHistoriaPaciente.aspx.designer.cs">
+      <DependentUpon>HomeHistoriaPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\ModificarAntecedente.aspx.cs">
+      <DependentUpon>ModificarAntecedente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\ModificarAntecedente.aspx.designer.cs">
+      <DependentUpon>ModificarAntecedente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\ModificarHistoriaClinica.aspx.cs">
+      <DependentUpon>ModificarHistoriaClinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\ModificarHistoriaClinica.aspx.designer.cs">
+      <DependentUpon>ModificarHistoriaClinica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\Odontograma.aspx.cs">
+      <DependentUpon>Odontograma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VHistoriaPaciente\Odontograma.aspx.designer.cs">
+      <DependentUpon>Odontograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\ConsultaFactura_Detalle.aspx.cs">
+      <DependentUpon>ConsultaFactura_Detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\ConsultaFactura_Detalle.aspx.designer.cs">
+      <DependentUpon>ConsultaFactura_Detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\ConsultarFactura.aspx.cs">
+      <DependentUpon>ConsultarFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\ConsultarFactura.aspx.designer.cs">
+      <DependentUpon>ConsultarFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\ConsultarPresupuesto.aspx.cs">
+      <DependentUpon>ConsultarPresupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\ConsultarPresupuesto.aspx.designer.cs">
+      <DependentUpon>ConsultarPresupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\ConsultarPresupuestoEspecifico.aspx.cs">
+      <DependentUpon>ConsultarPresupuestoEspecifico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\ConsultarPresupuestoEspecifico.aspx.designer.cs">
+      <DependentUpon>ConsultarPresupuestoEspecifico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaDatos.aspx.cs">
+      <DependentUpon>GenerarFacturaDatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaDatos.aspx.designer.cs">
+      <DependentUpon>GenerarFacturaDatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaDetalle.aspx.cs">
+      <DependentUpon>GenerarFacturaDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaDetalle.aspx.designer.cs">
+      <DependentUpon>GenerarFacturaDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaDetalleCompleto.aspx.cs">
+      <DependentUpon>GenerarFacturaDetalleCompleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaDetalleCompleto.aspx.designer.cs">
+      <DependentUpon>GenerarFacturaDetalleCompleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaOperacion.aspx.cs">
+      <DependentUpon>GenerarFacturaOperacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarFacturaOperacion.aspx.designer.cs">
+      <DependentUpon>GenerarFacturaOperacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto.aspx.cs">
+      <DependentUpon>GenerarPresupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto.aspx.designer.cs">
+      <DependentUpon>GenerarPresupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuestoEspecifico.aspx.cs">
+      <DependentUpon>GenerarPresupuestoEspecifico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuestoEspecifico.aspx.designer.cs">
+      <DependentUpon>GenerarPresupuestoEspecifico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto_Detalle.aspx.cs">
+      <DependentUpon>GenerarPresupuesto_Detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto_Detalle.aspx.designer.cs">
+      <DependentUpon>GenerarPresupuesto_Detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto_Detalle_completo.aspx.cs">
+      <DependentUpon>GenerarPresupuesto_Detalle_completo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto_Detalle_completo.aspx.designer.cs">
+      <DependentUpon>GenerarPresupuesto_Detalle_completo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto_Operacion.aspx.cs">
+      <DependentUpon>GenerarPresupuesto_Operacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\GenerarPresupuesto_Operacion.aspx.designer.cs">
+      <DependentUpon>GenerarPresupuesto_Operacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\HomeFactura.aspx.cs">
+      <DependentUpon>HomeFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\HomeFactura.aspx.designer.cs">
+      <DependentUpon>HomeFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\HomePresupuesto.aspx.cs">
+      <DependentUpon>HomePresupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\HomePresupuesto.aspx.designer.cs">
+      <DependentUpon>HomePresupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\HomePresupuestoFactura.aspx.cs">
+      <DependentUpon>HomePresupuestoFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VPresupuestoFacturas\HomePresupuestoFactura.aspx.designer.cs">
+      <DependentUpon>HomePresupuestoFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\ActivarInactivarProductos.aspx.cs">
+      <DependentUpon>ActivarInactivarProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\ActivarInactivarProductos.aspx.designer.cs">
+      <DependentUpon>ActivarInactivarProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\AgregarLote.aspx.cs">
+      <DependentUpon>AgregarLote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\AgregarLote.aspx.designer.cs">
+      <DependentUpon>AgregarLote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\AgregarProducto.aspx.cs">
+      <DependentUpon>AgregarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\AgregarProducto.aspx.designer.cs">
+      <DependentUpon>AgregarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\HomeInventario.aspx.cs">
+      <DependentUpon>HomeInventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\HomeInventario.aspx.designer.cs">
+      <DependentUpon>HomeInventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\HomeProductos.aspx.cs">
+      <DependentUpon>HomeProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\HomeProductos.aspx.designer.cs">
+      <DependentUpon>HomeProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\RegistroConsumo.aspx.cs">
+      <DependentUpon>RegistroConsumo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\RegistroConsumo.aspx.designer.cs">
+      <DependentUpon>RegistroConsumo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\SeleccionarProductoConsumo.aspx.cs">
+      <DependentUpon>SeleccionarProductoConsumo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\SeleccionarProductoConsumo.aspx.designer.cs">
+      <DependentUpon>SeleccionarProductoConsumo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\SeleccionarProductoLote.aspx.cs">
+      <DependentUpon>SeleccionarProductoLote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\SeleccionarProductoLote.aspx.designer.cs">
+      <DependentUpon>SeleccionarProductoLote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\VerDetalleInventario.aspx.cs">
+      <DependentUpon>VerDetalleInventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\VerDetalleInventario.aspx.designer.cs">
+      <DependentUpon>VerDetalleInventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\VerProducto.aspx.cs">
+      <DependentUpon>VerProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\VerProducto.aspx.designer.cs">
+      <DependentUpon>VerProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\VerProductoDetallado.aspx.cs">
+      <DependentUpon>VerProductoDetallado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProductosInventario\VerProductoDetallado.aspx.designer.cs">
+      <DependentUpon>VerProductoDetallado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\ActivarInactivarProveedores.aspx.cs">
+      <DependentUpon>ActivarInactivarProveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\ActivarInactivarProveedores.aspx.designer.cs">
+      <DependentUpon>ActivarInactivarProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\AgregarContacto.aspx.cs">
+      <DependentUpon>AgregarContacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\AgregarContacto.aspx.designer.cs">
+      <DependentUpon>AgregarContacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\AgregarProveedor.aspx.cs">
+      <DependentUpon>AgregarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\AgregarProveedor.aspx.designer.cs">
+      <DependentUpon>AgregarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\EditarContacto.aspx.cs">
+      <DependentUpon>EditarContacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\EditarContacto.aspx.designer.cs">
+      <DependentUpon>EditarContacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\EditarProveedor.aspx.cs">
+      <DependentUpon>EditarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\EditarProveedor.aspx.designer.cs">
+      <DependentUpon>EditarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\HomeProveedores.aspx.cs">
+      <DependentUpon>HomeProveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\HomeProveedores.aspx.designer.cs">
+      <DependentUpon>HomeProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\VerContacto.aspx.cs">
+      <DependentUpon>VerContacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\VerContacto.aspx.designer.cs">
+      <DependentUpon>VerContacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\VerProveedor.aspx.cs">
+      <DependentUpon>VerProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VProveedores\VerProveedor.aspx.designer.cs">
+      <DependentUpon>VerProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTrabajadoresEmpleados\AgregarEmpleado.aspx.cs">
+      <DependentUpon>AgregarEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTrabajadoresEmpleados\AgregarEmpleado.aspx.designer.cs">
+      <DependentUpon>AgregarEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTrabajadoresEmpleados\ConsultarDetalleEmpleado.aspx.cs">
+      <DependentUpon>ConsultarDetalleEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTrabajadoresEmpleados\ConsultarDetalleEmpleado.aspx.designer.cs">
+      <DependentUpon>ConsultarDetalleEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTrabajadoresEmpleados\ConsultarEmpleados.aspx.cs">
+      <DependentUpon>ConsultarEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTrabajadoresEmpleados\ConsultarEmpleados.aspx.designer.cs">
+      <DependentUpon>ConsultarEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTrabajadoresEmpleados\HomeTrabajadores.aspx.cs">
+      <DependentUpon>HomeTrabajadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTrabajadoresEmpleados\HomeTrabajadores.aspx.designer.cs">
+      <DependentUpon>HomeTrabajadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\AgregarTratamiento.aspx.cs">
+      <DependentUpon>AgregarTratamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\AgregarTratamiento.aspx.designer.cs">
+      <DependentUpon>AgregarTratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\ConsultarDetalleTratamiento.aspx.cs">
+      <DependentUpon>ConsultarDetalleTratamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\ConsultarDetalleTratamiento.aspx.designer.cs">
+      <DependentUpon>ConsultarDetalleTratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\ConsultarTratamiento.aspx.cs">
+      <DependentUpon>ConsultarTratamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\ConsultarTratamiento.aspx.designer.cs">
+      <DependentUpon>ConsultarTratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\EliminarTratamiento.aspx.cs">
+      <DependentUpon>EliminarTratamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\EliminarTratamiento.aspx.designer.cs">
+      <DependentUpon>EliminarTratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\HomeTratamiento.aspx.cs">
+      <DependentUpon>HomeTratamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\HomeTratamiento.aspx.designer.cs">
+      <DependentUpon>HomeTratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\ModificarTratamiento.aspx.cs">
+      <DependentUpon>ModificarTratamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vista\VTratamientos\ModificarTratamiento.aspx.designer.cs">
+      <DependentUpon>ModificarTratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PruebasUnitarias\PAgendaCitas\PruebasAgendayCitas.cs" />
+    <Compile Include="PruebasUnitarias\PCuentasPorCobrar\PruebaSqlServerCuentasPorCobrar.cs" />
+    <Compile Include="PruebasUnitarias\PCuentasPorPagar\PruebasLogicaCuentasPorPagar.cs" />
+    <Compile Include="PruebasUnitarias\PCuentasPorPagar\PruebaSqlServerCuentasPorPagar.cs" />
+    <Compile Include="PruebasUnitarias\PEmpleados\PruebasDAOEmpleado.cs" />
+    <Compile Include="PruebasUnitarias\PHistoriaClinica\PrueabaDAOHistoriaClinica.cs" />
+    <Compile Include="PruebasUnitarias\PPresupuestosYFacturas\PruebasDetalle_Presupuesto_Factura.cs" />
+    <Compile Include="PruebasUnitarias\PPresupuestosYFacturas\PruebasFactura.cs" />
+    <Compile Include="PruebasUnitarias\PPresupuestosYFacturas\PruebasLogicaFactura.cs" />
+    <Compile Include="PruebasUnitarias\PPresupuestosYFacturas\PruebasLogicaPresupuesto.cs" />
+    <Compile Include="PruebasUnitarias\PPresupuestosYFacturas\PruebasSQLServerPresupuestosFacturas.cs" />
+    <Compile Include="PruebasUnitarias\PruebaConexion.cs" />
+    <Compile Include="PruebasUnitarias\PTratamiento\PruebaDAOImplemento.cs" />
+    <Compile Include="PruebasUnitarias\PTratamiento\PruebaDAOTratamiento.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentacion\MasterPage\LoginMaestro.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentacion\MasterPage\PaginaMaestra.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Presentacion\Contrato\CProductosInventario\CBancos\" />
+    <Folder Include="PruebasUnitarias\PProductosInventario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7099</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
